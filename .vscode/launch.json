@@ -1,0 +1,18 @@
+{
+    "version": "2.0.0",
+    "configurations": [
+        {
+            "name": "RunAll JITX Designs in Project",
+            "type": "debugpy",
+            "request": "launch",
+            "console": "integratedTerminal",
+            "module": "jitx",
+            "args": [
+                "build-all",
+                "--port",
+                "${command:jitx.get-websocket-port}"
+            ],
+            "justMyCode": false
+        }
+    ]
+}

@@ -1,0 +1,31 @@
+{
+  "entries": [
+    {"tag":"instantiation","def-id":"Fa2GcxkJQsrfuLStmPvq9C","inst-id":"6xwHZnhubCrc91GkwwZjr7"},
+    {"tag":"instantiation","def-id":"Fa2GcxkJQsrfuLStmPvq9C","inst-id":"7nzV78fTxjA67suQsTzG1U"},
+    {"tag":"instantiation","def-id":0,"inst-id":"DJQyLmwTB5pvfGMDUoPPfD"},
+    {"tag":"instantiation","def-id":1,"inst-id":"84qDgrwPvyZuhkSAHJzak5"},
+    {"tag":"instantiation","def-id":"2CVNpec8ikTqkyRjxMJGwK","inst-id":"2M78zF3fumK43dG8qad7h7"},
+    {"tag":"package-contains-pad","pkg-id":"EAnsLuTH56hN1uVxcGjiUB","pad-id":"6xwHZnhubCrc91GkwwZjr7"},
+    {"tag":"package-contains-pad","pkg-id":"EAnsLuTH56hN1uVxcGjiUB","pad-id":"7nzV78fTxjA67suQsTzG1U"},
+    {"tag":"def-pin-uses-pad","pin-id":1,"pad-id":"6xwHZnhubCrc91GkwwZjr7","index":0},
+    {"tag":"component-has-pin","def-id":"2CVNpec8ikTqkyRjxMJGwK","pin-id":1},
+    {"tag":"def-pin-uses-pad","pin-id":0,"pad-id":"7nzV78fTxjA67suQsTzG1U","index":0},
+    {"tag":"component-has-pin","def-id":"2CVNpec8ikTqkyRjxMJGwK","pin-id":0},
+    {"tag":"component-uses-package","component-id":"2CVNpec8ikTqkyRjxMJGwK","package-id":"EAnsLuTH56hN1uVxcGjiUB"},
+    {"tag":"inst-contains","parent-id":"2M78zF3fumK43dG8qad7h7","child-id":"DJQyLmwTB5pvfGMDUoPPfD"},
+    {"tag":"inst-contains","parent-id":"2M78zF3fumK43dG8qad7h7","child-id":"84qDgrwPvyZuhkSAHJzak5"},
+    {"tag":"inst-contains","parent-id":"obgnmPoot9m93CVE6HZUZ","child-id":"2M78zF3fumK43dG8qad7h7"},
+    {"tag":"package-pad","id":"6xwHZnhubCrc91GkwwZjr7","ref":{"ref":{"name":"p"},"index":2},"pose":{"center":{"x":"BiVDab5naaT","y":"11111111"},"angle":"11111111","flip-x?":false},"side":"Top"},
+    {"tag":"package-pad","id":"7nzV78fTxjA67suQsTzG1U","ref":{"ref":{"name":"p"},"index":1},"pose":{"center":{"x":"Z8FKMutvQpf","y":"11111111"},"angle":"11111111","flip-x?":false},"side":"Top"},
+    {"tag":"pad-def","id":"Fa2GcxkJQsrfuLStmPvq9C","name":"ElecPad","shape":{"type":"polygon","points":[{"x":"BhxSrQNDkRu","y":"Bh4aK4eKiow"},{"x":"Z7iYdjBMag7","y":"Bh4aK4eKiow"},{"x":"Z7iYdjBMag7","y":"Z6pg6PTTZ49"},{"x":"BhxSrQNDkRu","y":"Z6pg6PTTZ49"}]},"type":"SMD"},
+    {"tag":"package","id":"EAnsLuTH56hN1uVxcGjiUB","name":"MA50V220M10x10_LP","package-hash":1212546591},
+    {"tag":"def-pin","id":0},
+    {"tag":"def-pin","id":1},
+    {"tag":"component","id":"2CVNpec8ikTqkyRjxMJGwK","name":"MA50V220M10x10","reference-prefix":"C"},
+    {"tag":"symbol","id":2},
+    {"tag":"pin","id":"DJQyLmwTB5pvfGMDUoPPfD","ref":{"ref":{"name":"c"},"field":{"name":"ANODE"}}},
+    {"tag":"pin","id":"84qDgrwPvyZuhkSAHJzak5","ref":{"ref":{"name":"c"},"field":{"name":"CATHODE"}}},
+    {"tag":"component-inst","id":"2M78zF3fumK43dG8qad7h7","public?":true,"ref":{"name":"c"},"schematic-groups":[],"explicit-designator":null},
+    {"tag":"top-module-inst","id":"obgnmPoot9m93CVE6HZUZ","def-name":"_TestCircuit"}
+  ]
+}

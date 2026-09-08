@@ -1,0 +1,14 @@
+{
+  "entries": [
+    {"tag":"instantiation","def-id":"CuAVb6QWQki5KpzHpHvCPW","inst-id":"3Vwch4qfsDxYMXaToJV5zp"},
+    {"tag":"package-contains-geometry","pkg-id":"GetuzJN9QtJdyWTX6Xa4LK","item-id":"BnRNjhqTLC912bpiCZskNj","index":0},
+    {"tag":"component-uses-package","component-id":"CuAVb6QWQki5KpzHpHvCPW","package-id":"GetuzJN9QtJdyWTX6Xa4LK"},
+    {"tag":"inst-contains","parent-id":"5TFo4ADB7ySMNK2UMBLuj3","child-id":"3Vwch4qfsDxYMXaToJV5zp"},
+    {"tag":"layer-stmt","id":"BnRNjhqTLC912bpiCZskNj","layer-spec":{"tag":"cutout"},"shape":{"type":"circle","center":{"x":"11111111","y":"11111111"},"radius":"BhpXvUEr3ss"}},
+    {"tag":"package","id":"GetuzJN9QtJdyWTX6Xa4LK","name":"MountingHoleLandpattern","package-hash":1995423587},
+    {"tag":"component","id":"CuAVb6QWQki5KpzHpHvCPW","name":"MountingHole","reference-prefix":"MH"},
+    {"tag":"symbol","id":0},
+    {"tag":"component-inst","id":"3Vwch4qfsDxYMXaToJV5zp","public?":true,"ref":{"name":"mh"},"schematic-groups":[],"explicit-designator":null},
+    {"tag":"top-module-inst","id":"5TFo4ADB7ySMNK2UMBLuj3","def-name":"_TestCircuit"}
+  ]
+}

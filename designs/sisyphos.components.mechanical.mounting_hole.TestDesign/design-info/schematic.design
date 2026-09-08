@@ -1,0 +1,50 @@
+{
+  "version": 3,
+  "assignments": [
+  ],
+  "id-mapping": {
+    "boxes": [
+      [{"id":"1111111111wAL8a85B","unit-id":0},0],
+      [{"id":"CuAVb6QWQki5KpzHpHvCPW","unit-id":0},1]
+    ],
+    "inst-boxes": [
+      [{"id":"3Vwch4qfsDxYMXaToJV5zp","unit-id":0},2]
+    ],
+    "annotation-boxes": [
+    ],
+    "nets": [
+    ],
+    "ports": [
+    ]
+  },
+  "design": {
+    "input": {
+      "paper-size": {
+        "x": 200,
+        "y": 125
+      },
+      "label-style": {
+        "type": "monospace-label-style",
+        "height-in-grid-units": 0.8,
+        "char-width-relative-to-height": 0.6
+      },
+      "boxes": [
+        {"id":0,"sw":{"x":-2,"y":-2},"ne":{"x":2,"y":2},"ports":[],"orientation":{"type":"any-rotation"}},
+        {"id":1,"sw":{"x":-2,"y":-2},"ne":{"x":2,"y":2},"ports":[],"orientation":{"type":"any-rotation"}}
+      ],
+      "insts": [
+        {"id":2,"box":1,"group":null}
+      ],
+      "nets": [
+      ],
+      "shorts": [
+      ],
+      "schematic-group-order": [
+      ]
+    },
+    "sheets": [
+      {"id":6,"title":null,"groups":[{"id":5,"groups":[null],"border":{"sw":{"x":96,"y":58},"ne":{"x":104,"y":66}},"insts":[{"inst":2,"pose":{"center":{"x":100,"y":62},"angle":0,"flip-x?":false}}],"children":[]}],"nets":[]}
+    ],
+    "hierarchical-diagram": null
+  }
+}
