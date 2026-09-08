@@ -11,9 +11,9 @@ build-backend = "hatchling.build"
 name = "sisyphos"
 version = "0.1"
 dependencies = [
-  "jitx>=4.0.0,<5",
-  "jitxlib-parts>=1.0.0,<2",
-  "jitxlib-standard>=4.0.0,<5",
+  "jitx>=4.4.0,<5",
+  "jitxlib-parts>=1.3.0,<2",
+  "jitxlib-standard>=4.4.0,<5",
   "jitxexamples-components>=1.0.0,<2"
 ]
 requires-python = ">=3.12"
