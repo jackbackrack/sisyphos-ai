@@ -25,6 +25,7 @@ from jitx.net import Net
 from jitx.shapes import Shape
 from jitx.shapes.primitive import Circle, Text
 from jitx.transform import Transform
+from jitx.units import ohm
 from jitxlib.parts import CapacitorQuery, Resistor, ResistorQuery
 from jitxlib.symbols.net_symbols.ground import GroundSymbol
 from jitxlib.symbols.net_symbols.power import PowerSymbol
@@ -131,8 +132,9 @@ class Sisyphos(Circuit):
         self.nets.append(self.j_dat_in.P1 + self.panel.DAT_IN)
         # 0603 0-ohm in series on the outgoing data (chain tail -> data-out connector).
         # Swap for ~20-30 ohm series termination later if the cabled signal needs it.
-        self.r_dat_out = Resistor(ResistorQuery(case=["0603"]), resistance=0.0)
-        self.r_dat_out.insert(self.panel.DAT_OUT, self.j_dat_out.P1)
+        self.r_dat_out = Resistor(ResistorQuery(case=["0603"]), resistance=0 * ohm)
+        self.nets.append(self.r_dat_out.p1 + self.panel.DAT_OUT)
+        self.nets.append(self.r_dat_out.p2 + self.j_dat_out.P1)
         # Orbited 90 deg around J_DAT_OUT to sit by its data pin (P1, below the
         # connector), flipped 180 deg so the input pad faces the incoming data.
         self.place(self.r_dat_out, Transform((-57.0, -8.0), 180.0), on=Side.Bottom)

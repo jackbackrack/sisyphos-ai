@@ -1,0 +1,137 @@
+{
+ "schema_version": 1,
+ "digest_version": 1,
+ "chains": {
+  "jlcpcb": {
+   "digest": "78e0877fced9897dbddba5c080ab36af4fcf283b4d438b2b3a65485b504496aa",
+   "providers": [
+    "jlcpcb"
+   ]
+  }
+ },
+ "entries": [
+  {
+   "digest": "45be3dd028813dd5b368568d722efc865537d68ea2ded11e387ae5deed920983",
+   "chain": "jlcpcb",
+   "lock_scope": "",
+   "query": "capacitor(capacitance=100 nanofarad, case=OneOf(0603), rated_voltage=50 volt)",
+   "filters": {
+    "capacitance": [
+     "Exactly",
+     [
+      "q",
+      "100 nanofarad"
+     ]
+    ],
+    "case": [
+     "OneOf",
+     [
+      "0603"
+     ]
+    ],
+    "rated_voltage": [
+     "Exactly",
+     [
+      "q",
+      "50 volt"
+     ]
+    ]
+   },
+   "provider": "jlcpcb",
+   "identity": {
+    "mpn": "CL10B104KB8NNNC",
+    "manufacturer": "Samsung Electro-Mechanics",
+    "category": "capacitor",
+    "provider": "jlcpcb",
+    "attributes": {
+     "capacitance": [
+      "q",
+      "100.0 nanofarad"
+     ],
+     "case": "0603",
+     "lcsc": "C1591",
+     "library": "extended",
+     "rated_voltage": [
+      "q",
+      "50.0 volt"
+     ],
+     "temperature_coefficient_code": "X7R",
+     "tolerance": 0.1
+    },
+    "provider_ref": "C1591"
+   },
+   "payload": {
+    "v": 1,
+    "datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10B104KB8NNNC_C1591.pdf",
+    "description": "100nF 50V X7R \u00b110% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+    "stock": 1539631,
+    "price": 0.0048,
+    "min_order_qty": 1,
+    "min_assembly_qty": 20,
+    "product_url": "https://jlcpcb.com/partdetail/C1591"
+   }
+  },
+  {
+   "digest": "9cdd89a9db884cabbf1a067a689ed0cbeb1305b5496fad4951d5077667d6ca67",
+   "chain": "jlcpcb",
+   "lock_scope": "",
+   "query": "resistor(case=OneOf(0603), resistance=0 ohm)",
+   "filters": {
+    "case": [
+     "OneOf",
+     [
+      "0603"
+     ]
+    ],
+    "resistance": [
+     "Exactly",
+     [
+      "q",
+      "0 ohm"
+     ]
+    ]
+   },
+   "provider": "jlcpcb",
+   "identity": {
+    "mpn": "0603WAJ0000T5E",
+    "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+    "category": "resistor",
+    "provider": "jlcpcb",
+    "attributes": {
+     "case": "0603",
+     "composition": "Thick Film Resistor",
+     "lcsc": "C15402",
+     "library": "extended",
+     "max_power": [
+      "q",
+      "100.0 milliwatt"
+     ],
+     "rated_voltage": [
+      "q",
+      "75.0 volt"
+     ],
+     "resistance": [
+      "q",
+      "0.0 ohm"
+     ],
+     "tcr": [
+      "q",
+      "800.0 / megakelvin"
+     ],
+     "tolerance": 0.05
+    },
+    "provider_ref": "C15402"
+   },
+   "payload": {
+    "v": 1,
+    "datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010216_UNI-ROYAL-Uniroyal-Elec-0603WAJ0000T5E_C15402.pdf",
+    "description": "-55\u2103~+155\u2103 0\u03a9 100mW 75V Thick Film Resistor \u00b15% \u00b1800ppm/\u2103 0603 Chip Resistor - Surface Mount ROHS",
+    "stock": 2284554,
+    "price": 0.0008,
+    "min_order_qty": 1,
+    "min_assembly_qty": 20,
+    "product_url": "https://jlcpcb.com/partdetail/C15402"
+   }
+  }
+ ]
+}

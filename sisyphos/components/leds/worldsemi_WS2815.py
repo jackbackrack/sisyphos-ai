@@ -36,6 +36,7 @@ from jitx.property import Property
 from jitx.shapes.composites import rectangle
 from jitx.shapes.primitive import Circle, Text
 from jitx.si import Toleranced
+from jitxlib.jlcpcb.part import LCSCPart
 from jitxlib.symbols.box import BoxSymbol, Column, PinGroup, Row
 
 
@@ -73,6 +74,10 @@ class WS2815(Component):
     mpn = "WS2815"
     reference_designator_prefix = "D"
     datasheet = "https://www.normandled.com/upload/201808/WS2815%20LED%20Datasheet.pdf"
+
+    # WS2815B-V1, 12V, SMD5050-6P (LCSC C5446699) -- the same LCSC/EasyEDA part
+    # the recommended land pattern above was cross-checked against.
+    lcsc = LCSCPart("C5446699")
 
     VCC = Port()  # IC supply (filter cap to GND)
     VDD = Port()  # LED supply, +12V

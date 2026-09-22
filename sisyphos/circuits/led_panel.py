@@ -18,6 +18,7 @@ from jitx.feature import Silkscreen
 from jitx.net import Port
 from jitx.shapes.primitive import Text
 from jitx.transform import Transform
+from jitx.units import V, nF
 from jitxlib.parts import Capacitor, CapacitorQuery
 
 from ..components.leds.worldsemi_WS2815 import WS2815
@@ -51,7 +52,7 @@ class LedDiamond(Circuit):
         self.leds = [WS2815() for _ in range(count)]
         self.caps = [
             Capacitor(
-                CapacitorQuery(case=["0603"]), capacitance=100e-9, rated_voltage=50.0
+                CapacitorQuery(case=["0603"]), capacitance=100 * nF, rated_voltage=50 * V
             )
             for _ in range(count)
         ]
@@ -69,9 +70,10 @@ class LedDiamond(Circuit):
 
             # per-LED VCC filter capacitor to GND (datasheet); placed beside the
             # VCC pad (clear of the body) and rotated to match the LED. cap.p1 is
-            # the VCC terminal (insert maps pin_a->p1), cap.p2 the GND terminal.
+            # the VCC terminal, cap.p2 the GND terminal.
             cap = self.caps[i]
-            cap.insert(led.VCC, self.GND)
+            self.nets.append(cap.p1 + led.VCC)
+            self.nets.append(cap.p2 + self.GND)
             cx, cy, crot = cap_layout[i]
             self.place(cap, Transform((cx, cy), crot))
             # Move the refdes alongside the cap (rotated 90 deg, off the body)
